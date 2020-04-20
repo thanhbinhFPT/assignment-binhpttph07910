@@ -23,8 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/home.css",
-              "src/assets/css/admin.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/home.scss",
+              "src/assets/css/admin.scss",
               "src/styles.css"
             ],
             "scripts": []
