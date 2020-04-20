@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { AdminComponent } from './admin/admin.component';
-import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { AdminComponent } from './backend/admin/admin.component';
+import { ProductManagerComponent } from './backend/product-manager/product-manager.component';
+import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
