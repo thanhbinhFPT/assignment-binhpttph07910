@@ -10,11 +10,12 @@ import { ProductManagerComponent } from './backend/product-manager/product-manag
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { ProductService } from './product.service';
-import { MockDataComponent } from './mock-data/mock-data.component';
+import { ProductDetailComponent } from './backend/product-detail/product-detail.component';
+
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, ProductManagerComponent, DashboardComponent, HomeComponent, MockDataComponent ],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, ProductManagerComponent, DashboardComponent, HomeComponent, ProductDetailComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })

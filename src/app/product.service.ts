@@ -3,9 +3,34 @@ import { Data } from './mockData';
 import { Product } from './product';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ProductService {
 
-  constructor() { }
+  api = 'https://5e79baa617314d0016133580.mockapi.io/abc';
+   constructor(
+    private http: HttpClient
+  ) { }
 
+  getProducts(): Observable<Product[]>{
+    return this.http.get<Product[]>(this.api);
+    // return this.products;
+  }
+  getProduct(id): Observable<Product>{
+    console.log(id);
+    return this.http.get<Product>(`${this.api}/${id}`);
+  }
+  addProduct(product): Observable<Product>{
+    return this.http.post<Product>(`${this.api}`, product);
+    // let newObj = { id: 6, ...product };
+    // this.products.push(newObj);
+  }
+  removeProduct(id): Observable<Product>{
+  
+    return this.http.delete<Product>(`${this.api}/${id}`);
+  }
+  updateProduct(product): Observable<Product>{
+    return this.http.put<Product>(`${this.api}/${product.id}`, product);
+  }
 }
