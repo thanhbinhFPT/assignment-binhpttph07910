@@ -11,11 +11,13 @@ import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { ProductService } from './product.service';
 import { ProductDetailComponent } from './backend/product-detail/product-detail.component';
+import { AddProductComponent } from './backend/add-product/add-product.component';
+
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, ProductManagerComponent, DashboardComponent, HomeComponent, ProductDetailComponent],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, ProductManagerComponent, DashboardComponent, HomeComponent, ProductDetailComponent, AddProductComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })
