@@ -9,10 +9,13 @@ import { AdminComponent } from './backend/admin/admin.component';
 import { ProductManagerComponent } from './backend/product-manager/product-manager.component';
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { ProductService } from './product.service';
+import { MockDataComponent } from './mock-data/mock-data.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, ProductManagerComponent, DashboardComponent, HomeComponent ],
-  bootstrap:    [ AppComponent ] 
+  declarations: [ AppComponent, HelloComponent, AdminComponent, ProductManagerComponent, DashboardComponent, HomeComponent, MockDataComponent ],
+  bootstrap:    [ AppComponent ],
+  providers: [ProductService] 
 })
 export class AppModule { }

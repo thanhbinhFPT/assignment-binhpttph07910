@@ -16,7 +16,6 @@ children: [
   {path: '', redirectTo: 'dashboard', pathMatch:'full'},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'product', component: ProductManagerComponent},
-  {path: 'productList', component: ProductManagerComponent},
 ]}
 ];
 
