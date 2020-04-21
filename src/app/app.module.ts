@@ -5,19 +5,19 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { AdminComponent } from './backend/admin/admin.component';
-import { ProductManagerComponent } from './backend/product-manager/product-manager.component';
-import { DashboardComponent } from './backend/dashboard/dashboard.component';
+
 import { HomeComponent } from './home/home.component';
 import { ProductService } from './product.service';
-import { ProductDetailComponent } from './backend/product-detail/product-detail.component';
-import { AddProductComponent } from './backend/add-product/add-product.component';
-
+import { AdminTextComponent } from './admin/admin-text/admin-text.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, ProductManagerComponent, DashboardComponent, HomeComponent, ProductDetailComponent, AddProductComponent],
+  declarations: [ AppComponent, HelloComponent, AdminTextComponent, ProductManagerComponent, DashboardComponent, HomeComponent, ProductDetailComponent, AddProductComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })
