@@ -13,11 +13,12 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { SlideComponent } from './slide/slide.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, AdminTextComponent, ProductManagerComponent, DashboardComponent, HomeComponent, ProductDetailComponent, AddProductComponent],
+  declarations: [ AppComponent, HelloComponent, AdminTextComponent, ProductManagerComponent, DashboardComponent, HomeComponent, ProductDetailComponent, AddProductComponent, SlideComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })
