@@ -10,12 +10,14 @@ import { AdminComponent } from './backend/admin/admin.component';
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { ProductManagerComponent } from './backend/product-manager/product-manager.component';
 import { HomeComponent } from './front/home/home.component';
+import { SlideHomeComponent } from './front/slide-home/slide-home.component';
+
 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent, ProductManagerComponent, HomeComponent],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent, ProductManagerComponent, HomeComponent, SlideHomeComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })
