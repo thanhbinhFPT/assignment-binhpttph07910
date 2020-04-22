@@ -1,3 +1,20 @@
-<p>
-dashboard works!
-</p>
+<div class="row">
+    <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+    <div class="card h-100">
+    <a href="#"><img class="card-img-top" [src]="product.img" style="height: 200px; width: 200px; margin-left: 25px;margin-top: 10px;" alt=""></a>
+    <div class="card-body">
+        <h4 class="card-title">
+            <a href="#">{{product.name}}</a>
+        </h4>
+        <h5>${{product.price}}</h5>
+        <p class="card-text">{{product.desc}}</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary"  routerLink="/product/{{product.id}}">Detail</button>
+        <button type="button" class="btn btn-secondary" routerLink="/product/edit/{{product.id}}">Edit</button>
+      </div>
+  </div>
+    </div>
+   
+  
+</div>
