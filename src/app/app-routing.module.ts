@@ -4,6 +4,7 @@ import { HomeComponent } from './front/home/home.component';
 import { AdminComponent } from './backend/admin/admin.component';
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { ProductDetailComponent } from './front/product-detail/product-detail.component';
+import { ProductManagerComponent } from './front/product-manager/product-manager.component';
 
 
 
