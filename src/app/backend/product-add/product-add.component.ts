@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../product';
 import { ProductService } from '../../product.service';
 import { Router } from '@angular/router';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-product-add',
@@ -10,12 +11,17 @@ import { Router } from '@angular/router';
 })
 export class ProductAddComponent implements OnInit {
   product: Product = new Product();
+  form: Product;
   constructor(
     private productService: ProductService,
-    private router: Router
+    private router: Router,
+    private fb: FormBuilder
   ) { }
 
-  ngOnInit():void {
+  ngOnInit() {
+    this.form = this.fb.group({
+      username: ['', [Validators.required]],
+    })
   }
    addProduct(){
 this.productService.addProduct(this.product).subscribe(Data => {

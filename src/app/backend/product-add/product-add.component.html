@@ -1,7 +1,14 @@
-<form>
-    <div class="form-group">
-      <label for="">Product Name</label>
-      <input type="text" class="form-control" name="name"  [(ngModel)]="product.name">
+<form [Product]="form" (ngSubmit)="onSubmit()"
+  class="col-md-6 offset-md-3">
+    <div class="form-group now">
+      <label class="col">Product Name
+      <input type="text" class="form-control" name="name"  [(ngModel)]="product.name" required>
+      </label>
+      <div class="col alert alert-danger" role="alert"
+    *ngIf="form.hasError('invalidusername', ['username']) &&
+      form.get('username').touched">
+    Invalid Username!
+  </div>
     </div>
     <div class="form-group">
         <label for="">Product photo</label>
