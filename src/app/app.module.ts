@@ -14,13 +14,14 @@ import { ProductDetailComponent } from './front/product-detail/product-detail.co
 import { HttpClientModule } from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ProductAddComponent } from './backend/product-add/product-add.component';
+import { ProductEditComponent } from './backend/product-edit/product-edit.component';
 
 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })
