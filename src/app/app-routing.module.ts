@@ -16,7 +16,7 @@ import { ProductManagerComponent } from './front/product-manager/product-manager
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'product/:productID', component:  ProductDetailComponent},
+  {path: 'home/:productID', component:  ProductDetailComponent},
   {path: 'admin', component: AdminComponent,
 children: [
   {path: '', redirectTo: 'dashboard', pathMatch:'full'},

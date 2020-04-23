@@ -1,5 +1,5 @@
 <div class="home-layout">
-    <!-- home -->
+    <app-slide-home></app-slide-home>
 <hr>
 <section class="banner_bottom py-5">
     <h3 class="section-title tittle-w3ls text-center mb-5">Tiểu sử thành lập</h3>
@@ -25,120 +25,24 @@
         <h3 class="section-title tittle-w3ls text-center mb-5">Sản phẩm mới</h3>
 <hr>
    <div class="row">
-        <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="col-lg-3 col-sm-6 mb-4" *ngFor="let product of products">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://cdn.nhanh.vn/cdn/store/4902/ps/20200418/img_5520.jpg" alt=""></a>
+                <a routerLink="/home/{{product.id}}"><img class="card-img-top" [src]="product.img" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">Mã Số: LYTAO137</a>
+                    <a routerLink="/home/{{product.id}}">{{product.name}}</a>
                   </h4>
-                  <h5><i class="fa fa-comment-o"></i>$143,000 VNĐ</h5>
-                  <p class="card-text">Áo crop ngang vai tay phồng rút nhún</p>
+                  <h5><i class="fa fa-comment-o"></i>${{product.price}} VNĐ</h5>
+                  <br>
+                   <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
                 <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                  <button class="btn btn-primary d-block w-100 btn-lg" (click)="showDetail(product)">show</button>
                 </div>
               </div>
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://cdn.nhanh.vn/cdn/store/4902/ps/20200418/img_5681.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Mã Số: LYTSE052</a>
-                  </h4>
-                  <h5><i class="fa fa-comment-o"></i>$249,000 VNĐ</h5>
-                  <p class="card-text">Set áo cổ vuông gấu bèo kèm cvay A</p>
-                </div>
-                <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></div>
-              </div>
+       
         </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://cdn.nhanh.vn/cdn/store/4902/ps/20200418/img_5438.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Mã Số: LYTVD285</a>
-                  </h4>
-                  <h5><i class="fa fa-comment-o"></i>$209,000 VNĐ</h5>
-                  <p class="card-text">Váy 2 dây dáng dài nẹp cúc</p>
-                </div>
-                <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></div>
-              </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://cdn.nhanh.vn/cdn/store/4902/ps/20200418/img_5465.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Mã Số: LYTVD284</a>
-                  </h4>
-                  <h5><i class="fa fa-comment-o"></i>$269,000 VNĐ</h5>
-                  <p class="card-text">Váy cổ tròn dáng xòe buộc dây thân sau</p>
-                </div>
-                <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></div>
-              </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://cdn.nhanh.vn/cdn/store/4902/ps/20200418/img_5602.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Mã Số: LYTAO139</a>
-                  </h4>
-                  <h5><i class="fa fa-comment-o"></i>$139,000 VNĐ</h5>
-                  <p class="card-text">Áo crop cổ vuông bèo buộc dây eo chun xòe</p>
-                </div>
-                <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></div>
-              </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://cdn.nhanh.vn/cdn/store/4902/ps/20200418/img_5768.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Mã Số: LYTVD295</a>
-                  </h4>
-                  <h5><i class="fa fa-comment-o"></i>$250,000 VNĐ</h5>
-                  <p class="card-text">Váy kẻ hở vai bèo tay chun</p>
-                </div>
-                <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></div>
-              </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://cdn.nhanh.vn/cdn/store/4902/ps/20200418/img_5433.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Mã Số: LYTAO136</a>
-                  </h4>
-                  <h5><i class="fa fa-comment-o"></i>$215,000 VNĐ</h5>
-                  <p class="card-text">Áo cổ sen dài tay cài 3 cúc măng séc</p>
-                </div>
-                <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></div>
-              </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-4">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://cdn.nhanh.vn/cdn/store/4902/ps/20200418/img_5813.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Mã Số: LYTVD282</a>
-                  </h4>
-                  <h5><i class="fa fa-comment-o"></i>$229,000 VNĐ</h5>
-                  <p class="card-text">Váy thô cổ vuông thân xếp ly bung</p>
-                </div>
-                <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small></div>
-              </div>
-        </div>
-   </div>
     </section>
 
    
@@ -149,7 +53,7 @@
             <div class="row footer-grids">
                 <div class="col-lg-4 mt-4">
 
-                    <h2> <img src="/assets/images/abc.png " alt=" " class="img-fluid">
+                    <h2> <img src="https://cf.shopee.vn/file/6507893c9020c9e9fac9167f3369346e_tn" alt=" " class="img-fluid">
                     </h2>
                 </div>
 
