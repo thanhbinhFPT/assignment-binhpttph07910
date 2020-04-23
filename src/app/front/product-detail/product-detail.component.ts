@@ -19,12 +19,6 @@ product: Product;
     this.getProduct();
   }
 getProduct(){
-    // this.route.params.subscribe(param => {
-    //   console.log(param);
-    //   this.productService.getProduct(param.productID).subscribe(Data =>{
-    //     console.log(Data);
-    //   })
-    // });
     this.route.params.subscribe(param => {
       this.productService.getProduct(param.productID).subscribe(Data => {
         this.product = Data;

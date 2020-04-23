@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../product';
-import { ProductService } from '../../product.service';
-import { ActivatedRoute } from '@angular/router';
+import{ Data } from '../../MockData'
+
 
 @Component({
   selector: 'app-home',
@@ -9,17 +9,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-products: Product[];
+products=Data;
+  selected: Product;
   constructor(
-    private productService: ProductService,
+
     
   ) { }
 
   ngOnInit() {
-    this.getProducts();
+   
   }
-getProducts(){
-    this.productService.getProducts().subscribe(Data=>{ this.products=Data})
+
     // this.products= this.productService.getProducts();
-}
 }
