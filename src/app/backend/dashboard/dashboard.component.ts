@@ -8,21 +8,24 @@ import { ProductService } from '../../product.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  selected: Product;
+  //  page = 1;
+  // pageSize = 3;
   products: Product[];
   constructor(
     private productSevice: ProductService
   ) { }
 
-  ngOnInit() {
-    this.getProduct();
+  ngOnInit():void {
+    this.getProducts();
   }
-  showDetail(product){
-    this.selected = product;
+  removeItem(id){
+    // this.productSevice.removeProduct(id).subscribe(response =>{
+    //   this.products= this.products.filter(products => products.id !==response.id);
+    // })
+    this.products= this.products.filter(products => products.id !==id);
   }
-  getProduct(){
-    this.productSevice.getProducts().subscribe(data => {
-      this.products = data;
-    })
+  getProducts(){
+    this.productSevice.getProducts().subscribe(Data=>{ this.products=Data})
+
   }
 }

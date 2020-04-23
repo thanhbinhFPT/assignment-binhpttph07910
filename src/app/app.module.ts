@@ -10,17 +10,17 @@ import { AdminComponent } from './backend/admin/admin.component';
 import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { HomeComponent } from './front/home/home.component';
 import { SlideHomeComponent } from './front/slide-home/slide-home.component';
-import { ProductManagerComponent } from './front/product-manager/product-manager.component';
 import { ProductDetailComponent } from './front/product-detail/product-detail.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductHomeDetailComponent } from './front/product-home-detail/product-home-detail.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ProductAddComponent } from './backend/product-add/product-add.component';
 
 
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent, ProductManagerComponent, HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductHomeDetailComponent ],
+  imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })

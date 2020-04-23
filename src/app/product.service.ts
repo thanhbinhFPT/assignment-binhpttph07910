@@ -14,7 +14,6 @@ export class ProductService {
 
   getProducts(): Observable<Product[]>{
     return this.http.get<Product[]>(this.api);
-    // return this.products;
   }
   getProduct(id): Observable<Product>{
     console.log(id);
@@ -22,8 +21,6 @@ export class ProductService {
   }
   addProduct(product): Observable<Product>{
     return this.http.post<Product>(`${this.api}`, product);
-    // let newObj = { id: 6, ...product };
-    // this.products.push(newObj);
   }
   removeProduct(id): Observable<Product>{
   
