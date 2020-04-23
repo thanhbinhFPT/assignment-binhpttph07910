@@ -8,11 +8,11 @@
             <a  routerLink="/home/{{product.id}}">{{product.name}}</a>
         </h4>
         <h5>${{product.price}}</h5>
-
+        <p class="card-text"><small class="text-muted">{{product.desc}}</small></p>
     </div>
     <div class="btn-group" role="group" aria-label="Basic example">
         <button  class="btn btn-secondary"  (click)="removeItem(product.id)">Delete</button>
-        <button  class="btn btn-secondary" routerLink="">Edit</button>
+        <button  class="btn btn-secondary" routerLink="edit/{{product.id}}">Edit</button>
       </div>
   </div>
 

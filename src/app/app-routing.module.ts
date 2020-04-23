@@ -16,7 +16,8 @@ children: [
   {path: '', redirectTo: 'dashboard', pathMatch:'full'},
   {path: 'dashboard', component: DashboardComponent,},
   {path: 'add', component: ProductAddComponent},
-  {path: 'edit', component:ProductEditComponent}
+  {path: 'edit', component: ProductEditComponent},
+  {path: 'dashboard/edit/:productID', component: ProductEditComponent}
 ]}
 ];
 
