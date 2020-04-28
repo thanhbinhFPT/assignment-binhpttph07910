@@ -6,11 +6,13 @@ import { DashboardComponent } from './backend/dashboard/dashboard.component';
 import { ProductDetailComponent } from './front/product-detail/product-detail.component';
 import { ProductAddComponent } from './backend/product-add/product-add.component';
 import { ProductEditComponent } from './backend/product-edit/product-edit.component';
+import { ProducListComponent } from './front/produc-list/produc-list.component';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'home/:productID', component:  ProductDetailComponent},
+  {path: 'product', component: ProducListComponent},
+  {path: 'product/:productID', component:  ProductDetailComponent},
   {path: 'admin', component: AdminComponent,
 children: [
   {path: '', redirectTo: 'dashboard', pathMatch:'full'},
