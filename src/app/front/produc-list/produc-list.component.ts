@@ -8,6 +8,8 @@ import { ProductService } from '../../product.service';
   styleUrls: ['./produc-list.component.css']
 })
 export class ProducListComponent implements OnInit {
+   page = 1;
+  pageSize = 6;
 products: Product[];
   constructor(
      private productService: ProductService 

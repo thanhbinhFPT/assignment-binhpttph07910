@@ -12,7 +12,7 @@ const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'product', component: ProducListComponent},
-  {path: 'product/:productID', component:  ProductDetailComponent},
+  {path: 'home/product/:productID', component:  ProductDetailComponent},
   {path: 'admin', component: AdminComponent,
 children: [
   {path: '', redirectTo: 'dashboard', pathMatch:'full'},
