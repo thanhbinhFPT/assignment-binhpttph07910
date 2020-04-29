@@ -7,10 +7,10 @@
     <a  routerLink="/home/{{product.id}}"><img class="card-img-top" [src]="product.img" alt=""></a>
     <div class="card-body">
         <h4 class="card-title">
-            <a  routerLink="/home/{{product.id}}">{{product.name}}</a>
+            <a  routerLink="/home/{{product.id}}">Tên sản phẩm: {{product.name}}</a>
         </h4>
-        <h5>${{product.price}}VNĐ</h5>
-        <p class="card-text"><small class="text-muted">{{product.desc}}</small></p>
+        <h5>Giá: ${{product.price}}VNĐ</h5>
+        <p class="card-text"><small class="text-muted"><b>Mô tả sản phẩm:</b><br>{{product.desc}}</small></p>
     </div>
     <div class="btn-group" role="group" aria-label="Basic example">
         <button  class="btn btn-secondary"  (click)="removeItem(product.id)">Delete</button>
