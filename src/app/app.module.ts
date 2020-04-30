@@ -17,13 +17,14 @@ import { ProductAddComponent } from './backend/product-add/product-add.component
 import { ProductEditComponent } from './backend/product-edit/product-edit.component';
 import { ProductComponent } from './front/product/product.component';
 import { ProducListComponent } from './front/produc-list/produc-list.component';
+import { AboutComponent } from './front/about/about.component';
 
 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent, AboutComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })
