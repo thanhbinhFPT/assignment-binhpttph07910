@@ -18,13 +18,14 @@ import { ProductEditComponent } from './backend/product-edit/product-edit.compon
 import { ProductComponent } from './front/product/product.component';
 import { ProducListComponent } from './front/produc-list/produc-list.component';
 import { AboutComponent } from './front/about/about.component';
+import { NewsComponent } from './front/news/news.component';
 
 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent, AboutComponent],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent, AboutComponent, NewsComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })

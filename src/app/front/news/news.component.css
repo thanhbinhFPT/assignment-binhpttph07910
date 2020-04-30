@@ -9,7 +9,7 @@
   height: 100px;
 }
 .block-about-top {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .block-about-text {
   max-width: 1085px;
@@ -29,6 +29,7 @@
   height: 1px;
   background-color: #e3e3e3;
   max-width: 480px;
+  margin: 0 auto;
   position: absolute;
   bottom: 0;
   left: 50%;

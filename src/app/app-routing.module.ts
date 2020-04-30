@@ -8,12 +8,14 @@ import { ProductAddComponent } from './backend/product-add/product-add.component
 import { ProductEditComponent } from './backend/product-edit/product-edit.component';
 import { ProducListComponent } from './front/produc-list/produc-list.component';
 import { AboutComponent } from './front/about/about.component';
+import { NewsComponent } from './front/news/news.component';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'product', component: ProducListComponent},
+  {path: 'news', component: NewsComponent},
   {path: 'home/product/:productID', component:  ProductDetailComponent},
   {path: 'admin', component: AdminComponent,
 children: [

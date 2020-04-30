@@ -1,48 +1,35 @@
 <div class="home-layout">
-                <!-- nav -->
-                <nav class="wthree-w3ls">
+          <nav class="wthree-w3ls">
                     <div id="logo">
                         <h1> <a class="navbar-brand px-5 mx-5" href="/home">Lyra
                             </a>
                         </h1>
                     </div>
-
-                    <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mr-auto">
                         <li class="active"><a href="/home">Trang chủ</a></li>
-                        <li><a href="/about">Giới thiệu</a></li>
+                        <li><a routerLink="/about">Giới thiệu</a></li>
                         <li><a routerLink="/product">Sản phẩm</a> </li>
-                        <li><a href="#gallery">Tin tức</a></li>
+                        <li><a href="/news">Tin tức</a></li>
                         <li><a href="contact.html">Liên hệ</a></li>
                     </ul>
                 </nav>
-<div class="container">
-
-  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Sản phẩm</h1>
-  <hr class="mt-2 mb-5">
-<div class="row">
-  <div class="col-lg-4 col-sm-6 portfolio-item" *ngFor="let product of products  | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
-    <div class="card h-100">
-      <a  routerLink="/home/product/{{product.id}}"><img class="card-img-top" [src]="product.img" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a  routerLink="/client/product/{{product.id}}">Tên sản phầm: {{product.name}}</a>
-        </h4>
-        <h5>Giá: ${{product.price}}</h5>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-    </div>
-    </div>
-  </div>
-   <ngb-pagination
-    [(page)]="page"
-    [pageSize]="pageSize"
-    [collectionSize]="products.length"></ngb-pagination>
-    </div>
+<div class="block-about-top">
 </div>
-<br><br><br><br>
+<div _ngcontent-tdb-c12="" class="block-about-text "style="margin-bottom: 100px;">
+  <div _ngcontent-tdb-c12="" class="about-text-left ">
+  <p _ngcontent-tdb-c12="">
+    <img _ngcontent-tdb-c12="" alt="" src="https://cdn.nhanh.vn/cdn/store/26/artCT/42802/lyra_shop_mang_su_ngot_ngao_den_co_phai_nu_7.jpg">
+    </p>
+    </div>
+    
+    <div _ngcontent-tdb-c12="" class="about-text-right">
+      <h3 _ngcontent-tdb-c12="" class="title">Tiểu sử thành lập</h3>
+      <p _ngcontent-tdb-c12="">Được thành lập từ năm 2012, Lyra được biết đến là thương hiệu thời trang mang phong cách nữ tính, ngọt ngào, nắm bắt xu hướng nhanh chóng và đa dạng.  </p>
+      <p _ngcontent-tdb-c12=""> Mỗi sản phẩm của Lyra đều hướng tới sự tiện dụng, tươi trẻ và giá thành cạnh tranh nhất! Bên cạnh chất lượng sản phẩm, Lyra luôn nỗ lực đem đến cho khách hàng trải nghiệm về 1 chất lượng dịch vụ tốt nhất. Lyra tin rằng, chăm chút cho từng sản phẩm, tận tâm trong từng dịch vụ là điều cốt lõi dành được tình cảm, sự tin tưởng trọn vẹn của khách hàng.</p>
+      <p _ngcontent-tdb-c12="">Đó cũng là sứ mệnh mà chúng tôi đang hướng tới! Chúc bạn có những trải nghiệm mua sắm tuyệt vời cùng Lyrashop.vn! </p>
+      </div>
+      </div>
     <!-- footer -->
     <footer class="py-lg-5 py-4">
         <div class="container py-sm-3">
