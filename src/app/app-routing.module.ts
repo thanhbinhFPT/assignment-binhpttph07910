@@ -21,8 +21,8 @@ const routes: Routes = [
 children: [
   {path: '', redirectTo: 'dashboard', pathMatch:'full'},
   {path: 'dashboard', component: DashboardComponent,},
+  {path: 'dashboard/:productID', component:  ProductDetailComponent},
   {path: 'add', component: ProductAddComponent},
-  {path: 'edit', component: ProductEditComponent},
   {path: 'dashboard/edit/:productID', component: ProductEditComponent}
 ]}
 ];

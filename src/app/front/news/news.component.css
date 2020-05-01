@@ -4,10 +4,6 @@
     font-family: "time";
     font-style: black;
 }
-.img {
-  width: 300px;
-  height: 100px;
-}
 .block-about-top {
   margin-bottom: 100px;
 }
@@ -41,7 +37,7 @@
   margin-bottom: 30px;
 }
 .block-about-text .about-text-left {
-  width: 50%;
+  width: 30%;
   margin-bottom: 30px;
 }
 .block-about-text .title {
