@@ -20,13 +20,14 @@ import { ProducListComponent } from './front/produc-list/produc-list.component';
 import { AboutComponent } from './front/about/about.component';
 import { NewsComponent } from './front/news/news.component';
 import { NewsDetailComponent } from './front/news-detail/news-detail.component';
+import { TuyendungComponent } from './front/tuyendung/tuyendung.component';
 
 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule,ReactiveFormsModule],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent, AboutComponent, NewsComponent, NewsDetailComponent],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent, AboutComponent, NewsComponent, NewsDetailComponent, TuyendungComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })

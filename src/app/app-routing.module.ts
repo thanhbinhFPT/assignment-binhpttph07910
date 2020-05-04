@@ -10,6 +10,7 @@ import { ProducListComponent } from './front/produc-list/produc-list.component';
 import { AboutComponent } from './front/about/about.component';
 import { NewsComponent } from './front/news/news.component';
 import { NewsDetailComponent } from './front/news-detail/news-detail.component';
+import { TuyendungComponent } from './front/tuyendung/tuyendung.component';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'product', component: ProducListComponent},
   {path: 'news', component: NewsComponent},
   {path: 'newsDetail', component:NewsDetailComponent}, 
+  {path: 'tuyendung', component: TuyendungComponent},
   {path: 'home/product/:productID', component:  ProductDetailComponent},
   {path: 'admin', component: AdminComponent,
 children: [
