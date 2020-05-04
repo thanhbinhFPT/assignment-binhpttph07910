@@ -11,6 +11,7 @@ import { AboutComponent } from './front/about/about.component';
 import { NewsComponent } from './front/news/news.component';
 import { NewsDetailComponent } from './front/news-detail/news-detail.component';
 import { TuyendungComponent } from './front/tuyendung/tuyendung.component';
+import { ContactComponent } from './front/contact/contact.component';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'product', component: ProducListComponent},
   {path: 'news', component: NewsComponent},
+  {path: 'contact', component: ContactComponent},
   {path: 'newsDetail', component:NewsDetailComponent}, 
   {path: 'tuyendung', component: TuyendungComponent},
   {path: 'home/product/:productID', component:  ProductDetailComponent},

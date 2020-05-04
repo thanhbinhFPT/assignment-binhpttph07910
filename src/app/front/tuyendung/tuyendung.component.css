@@ -7,6 +7,10 @@
 .block-about-top {
   margin-bottom: 100px;
 }
+.block-about-top img {
+  display: block;
+  width: 100%;
+}
 .block-about-text {
   max-width: 1085px;
   margin: 0 auto;
