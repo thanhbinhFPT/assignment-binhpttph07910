@@ -1,6 +1,6 @@
 
 .block-about-top {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .block-about-top img {
   display: block;
@@ -417,4 +417,8 @@
     background: rgb(70, 64, 64);
     font-family: "time";
     font-style: black;
+}
+.footer-block h6 {
+    color: #fff;
+    margin-bottom: 30px;
 }

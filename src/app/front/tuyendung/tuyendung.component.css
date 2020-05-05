@@ -60,3 +60,7 @@
 .block-about-text p {
   margin-bottom: 10px;
 }
+.footer-block h6 {
+    color: #fff;
+    margin-bottom: 30px;
+}

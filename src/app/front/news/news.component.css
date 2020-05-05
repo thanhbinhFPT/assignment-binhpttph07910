@@ -5,7 +5,7 @@
     font-style: black;
 }
 .block-about-top {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .block-about-text {
   max-width: 1085px;
@@ -56,3 +56,8 @@
 .block-about-text p {
   margin-bottom: 10px;
 }
+.footer-block h6 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+

@@ -4,3 +4,7 @@
     font-family: "time";
     font-style: black;
 }
+.footer-block h6 {
+    color: #fff;
+    margin-bottom: 30px;
+}
