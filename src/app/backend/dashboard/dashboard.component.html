@@ -1,10 +1,10 @@
 <header class="d-flex mb-3 pt-5 justify-content-between">
-<input style="width: 300px;" class="form-control" placeholder="Search for..." type="text" [(ngModel)]="name" (input)="search()"/>
+<input style="width: 300px;" class="form-control" placeholder="Search for..." type="text" [(ngModel)]="name" />
     <button class="btn btn-primary" routerLink="/admin/add">Add Product</button>
 </header>
 <br>
 <div class="row">
-    <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+    <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products | filter:name | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
     <div class="card h-100">
     <a  routerLink="{{product.id}}"><img class="card-img-top" [src]="product.img" alt=""></a>
     <div class="card-body">

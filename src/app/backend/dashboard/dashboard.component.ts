@@ -26,14 +26,14 @@ export class DashboardComponent implements OnInit {
     this.productSevice.getProducts().subscribe(Data=>{ this.products=Data})
 
   }
-  search(){
-    if(this.name !=""){
-      this.products=this.products.filter(res =>{
-        return res.name.toLocaleLowerCase().match(this.name.toLocaleLowerCase());
-      });
-    }else if(this.name == ""){
-      this.ngOnInit();
-    }
+  // search(){
+  //   if(this.name !=""){
+  //     this.products=this.products.filter(res =>{
+  //       return res.name.toLocaleLowerCase().match(this.name.toLocaleLowerCase());
+  //     });
+  //   }else if(this.name == ""){
+  //     this.ngOnInit();
+  //   }
     
-  }
+  // }
 }
