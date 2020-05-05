@@ -27,7 +27,7 @@ import { ContactComponent } from './front/contact/contact.component';
 
 
 @NgModule({
-  imports:    [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule,ReactiveFormsModule,Ng2SearchPipeModule],
+  imports: [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule,ReactiveFormsModule,Ng2SearchPipeModule],
   declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent, AboutComponent, NewsComponent, NewsDetailComponent, TuyendungComponent, ContactComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
