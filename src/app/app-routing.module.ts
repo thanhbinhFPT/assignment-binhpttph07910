@@ -12,6 +12,7 @@ import { NewsComponent } from './front/news/news.component';
 import { NewsDetailComponent } from './front/news-detail/news-detail.component';
 import { TuyendungComponent } from './front/tuyendung/tuyendung.component';
 import { ContactComponent } from './front/contact/contact.component';
+import { DashboardDetailComponent } from './backend/dashboard-detail/dashboard-detail.component';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -27,7 +28,7 @@ const routes: Routes = [
 children: [
   {path: '', redirectTo: 'dashboard', pathMatch:'full'},
   {path: 'dashboard', component: DashboardComponent,},
-  {path: 'dashboard/:productID', component:  ProductDetailComponent},
+  {path: 'dashboard/:productID', component:  DashboardDetailComponent},
   {path: 'add', component: ProductAddComponent},
   {path: 'dashboard/edit/:productID', component: ProductEditComponent}
 ]}

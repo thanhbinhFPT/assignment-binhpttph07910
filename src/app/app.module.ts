@@ -22,13 +22,14 @@ import { NewsComponent } from './front/news/news.component';
 import { NewsDetailComponent } from './front/news-detail/news-detail.component';
 import { TuyendungComponent } from './front/tuyendung/tuyendung.component';
 import { ContactComponent } from './front/contact/contact.component';
+import { DashboardDetailComponent } from './backend/dashboard-detail/dashboard-detail.component';
 
 
 
 
 @NgModule({
   imports: [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule,NgbModule,ReactiveFormsModule,Ng2SearchPipeModule],
-  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent, AboutComponent, NewsComponent, NewsDetailComponent, TuyendungComponent, ContactComponent],
+  declarations: [ AppComponent, HelloComponent, AdminComponent, DashboardComponent,  HomeComponent, SlideHomeComponent, ProductDetailComponent, ProductAddComponent, ProductEditComponent, ProductComponent, ProducListComponent, AboutComponent, NewsComponent, NewsDetailComponent, TuyendungComponent, ContactComponent, DashboardDetailComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService] 
 })
