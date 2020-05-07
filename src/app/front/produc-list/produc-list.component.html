@@ -27,12 +27,13 @@
       <a  routerLink="/home/product/{{product.id}}"><img class="card-img-top" [src]="product.img" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a  routerLink="/client/product/{{product.id}}">Tên sản phầm: {{product.name}}</a>
+          <a>Tên sản phầm: {{product.name}}</a>
         </h4>
         <h5>Giá: ${{product.price}}</h5>
       </div>
       <div class="card-footer">
         <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+         <button class="btn btn-primary d-block w-100 btn-lg" routerLink="/home/product/{{product.id}}">show</button>
     </div>
     </div>
   </div>
