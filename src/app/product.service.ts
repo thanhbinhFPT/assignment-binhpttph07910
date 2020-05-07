@@ -15,9 +15,6 @@ export class ProductService {
   getProducts(): Observable<Product[]>{
     return this.http.get<Product[]>(this.api);
   }
-   search(name:string): Observable<Product[]>{
-    return this.http.get<Product[]>(this.api+"search="+name);
-  }
   getProduct(id): Observable<Product>{
     console.log(id);
     return this.http.get<Product>(`${this.api}/${id}`);

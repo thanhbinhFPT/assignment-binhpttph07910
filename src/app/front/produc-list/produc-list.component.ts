@@ -16,7 +16,6 @@ products: Product[];
      ) { 
    
   }
-
   ngOnInit() {
     this.getProducts();
   }
